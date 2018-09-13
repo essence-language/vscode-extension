@@ -1,0 +1,95 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Essence",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#operators"
+		},
+		{
+			"include": "#punctuation"
+		},
+		{
+			"include": "#numbers"
+		},
+		{
+			"name": "constant.language.boolean.true.essence",
+			"match": "\\b(true)\\b"
+		},
+		{
+			"name": "constant.language.boolean.false.essence",
+			"match": "\\b(false)\\b"
+		},
+		{
+			"name": "support.function.essence",
+			"match": "\\b__\\w+\\b"
+		},
+		{
+			"name": "variable.language.essence",
+			"match": "@"
+		},
+		{
+			"name": "entity.name.function.essence",
+			"match": "\\b(\\w+)(?=\\()\\b"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.essence",
+					"match": "\\b(if|else|type|constant|variable|function|static|implementation|overload)\\b"
+				},
+				{
+					"name": "keyword.control.essence",
+					"match": "<-|->"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.essence",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.essence",
+					"match": "\\\\."
+				}
+			]
+		},
+		"operators": {
+			"patterns": [
+				{
+					"name": "keyword.operator.essence",
+					"match": "!|<\\||\\|>|\\=|\\=\\=|!\\=|::"
+				}
+			]
+		},
+		"punctuation": {
+			"patterns": [
+				{
+					"name": "meta.brace.round.essence",
+					"match": "\\(|\\)"
+				},
+				{
+					"name": "punctuation.definition.block.essence",
+					"match": "\\{|\\}"
+				}
+			]
+		},
+		"numbers": {
+			"patterns": [
+				{
+					"name": "constant.numeric.decimal.essence",
+					"match": "[0-9]+[0-9_]*"
+				}
+			]
+		}
+	},
+	"scopeName": "source.essence"
+}
