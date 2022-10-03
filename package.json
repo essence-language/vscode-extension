@@ -1,0 +1,40 @@
+{
+    "name": "essence-language",
+    "displayName": "Essence",
+    "description": "Syntax Highlighting for Essence.",
+    "version": "0.0.3",
+    "publisher": "essence",
+    "icon": "icon.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/essence-language/vscode-extension.git"
+    },
+    "engines": {
+        "vscode": "^1.60.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "essence",
+                "aliases": [
+                    "Essence",
+                    "essence"
+                ],
+                "extensions": [
+                    ".es"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "essence",
+                "scopeName": "source.essence",
+                "path": "./syntaxes/essence.tmLanguage.json"
+            }
+        ]
+    }
+}

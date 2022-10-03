@@ -1,0 +1,135 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Essence",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#numbers"
+		},
+		{
+			"include": "#booleans"
+		},
+		{
+			"include": "#punctuation"
+		},
+		{
+			"name": "support.function.essence",
+			"match": "\\b__\\w+\\b"
+		},
+		{
+			"name": "entity.name.function.essence",
+			"match": "\\b(\\w+)(?=\\()\\b"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.essence",
+					"match": "\\b(if|else)\\b"
+				},
+				{
+					"name": "keyword.control.flow.essence",
+					"match": "<-"
+				},
+				{
+					"name": "storage.type.type.essence",
+					"match": "\\b(type)\\b"
+				},
+				{
+					"name": "storage.type.essence",
+					"match": "\\b(constant|variable)\\b"
+				},
+				{
+					"name": "storage.type.function.essence",
+					"match": "\\b(function)\\b"
+				},
+				{
+					"name": "storage.modifier.essence",
+					"match": "\\b(static|overload)\\b"
+				},
+				{
+					"name": "keyword.essence",
+					"match": "\\b(implementation|import|export|match)\\b"
+				},
+				{
+					"name": "meta.symbol.essence",
+					"match": "@|<\\||::"
+				},
+				{
+					"name": "variable.language.essence",
+					"match": "@"
+				},
+				{
+					"name": "keyword.operator.assignment.essence",
+					"match": "\\b(\\=)\\b"
+				},
+				{
+					"name": "punctuation.accessor.essence",
+					"match": "(\\.)"
+				},
+				{
+					"name": "punctuation.separator.comma.essence",
+					"match": "(\\,)"
+				},
+				{
+					"name": "meta.arrow.essence",
+					"match": "(\\<\\-|\\-\\>)"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.essence",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.essence",
+					"match": "\\\\."
+				}
+			]
+		},
+		"numbers": {
+			"patterns": [
+				{
+					"name": "constant.numeric.fraction.essence",
+					"match": "-?[0-9][0-9_]*\/-?[0-9][0-9_]*"
+				},
+				{
+					"name": "constant.numeric.integer.essence",
+					"match": "-?[0-9][0-9_]*"
+				}
+			]
+		},
+		"booleans": {
+			"patterns": [
+				{
+					"name": "constant.language.boolean.true.essence",
+					"match": "\\b(true)\\b"
+				},
+				{
+					"name": "constant.language.boolean.false.essence",
+					"match": "\\b(false)\\b"
+				}
+			]
+		},
+		"punctuation": {
+			"patterns": [
+				{
+					"name": "meta.brace.round.essence",
+					"match": "\\(|\\)"
+				},
+				{
+					"name": "punctuation.definition.block.essence",
+					"match": "\\{|\\}"
+				}
+			]
+		}
+	},
+	"scopeName": "source.essence"
+}
