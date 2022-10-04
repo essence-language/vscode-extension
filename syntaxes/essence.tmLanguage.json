@@ -31,7 +31,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.essence",
-					"match": "\\b(if|else)\\b"
+					"match": "\\b(if|else|case)\\b"
 				},
 				{
 					"name": "keyword.control.flow.essence",
@@ -55,14 +55,14 @@
 				},
 				{
 					"name": "keyword.essence",
-					"match": "\\b(implementation|import|export|match)\\b"
+					"match": "\\b(implementation|imports|import|from|exports|export|match)\\b"
 				},
 				{
 					"name": "meta.symbol.essence",
-					"match": "@|<\\||::"
+					"match": "<\\||::"
 				},
 				{
-					"name": "variable.language.essence",
+					"name": "variable.language.this.essence",
 					"match": "@"
 				},
 				{
