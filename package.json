@@ -13,9 +13,16 @@
         "vscode": "^1.60.0"
     },
     "categories": [
-        "Programming Languages"
+        "Programming Languages",
+        "Snippets"
     ],
     "contributes": {
+        "snippets": [
+            {
+                "language": "essence",
+                "path": "./snippets/essence.code-snippets"
+            }
+        ],
         "languages": [
             {
                 "id": "essence",
