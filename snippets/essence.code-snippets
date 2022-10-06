@@ -8,7 +8,6 @@
 	"implementation": {
 		"prefix": [
 			"impl",
-			"implementation"
 		],
 		"body": [
 			"implementation {",
@@ -19,9 +18,40 @@
 		],
 		"description": "An implementation block."
 	},
+	"variable": {
+		"prefix": [
+			"var",
+		],
+		"body": [
+			"variable ${1:name} = ${3:value}",
+			"$0",
+		],
+		"description": "A variable declaration."
+	},
+	"constant": {
+		"prefix": [
+			"con",
+		],
+		"body": [
+			"constant ${1:name} = ${3:value}",
+			"$0",
+		],
+		"description": "A constant declaration."
+	},
+	"function": {
+		"prefix": [
+			"fun",
+		],
+		"body": [
+			"function ${1:name}(${2:externalName} ${3:internalName}: ${4:Type}) -> ${5:ReturnType} {",
+			"\t$0",
+			"}"
+		],
+		"description": "A constant declaration."
+	},
 	"match": {
 		"prefix": [
-			"match"
+			"mat"
 		],
 		"body": [
 			"match ${1:value} {",
@@ -34,7 +64,7 @@
 	},
 	"case": {
 		"prefix": [
-			"case"
+			"cas"
 		],
 		"body": [
 			"case ${1:matcher} -> ${2:returnType} {",
