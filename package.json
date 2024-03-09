@@ -2,7 +2,7 @@
     "name": "essence-language",
     "displayName": "Essence",
     "description": "Syntax Highlighting for Essence.",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "publisher": "essence",
     "icon": "icon.png",
     "repository": {
