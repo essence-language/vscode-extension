@@ -45,6 +45,10 @@
 					"match": "\\b(type)\\b"
 				},
 				{
+					"name": "storage.type.namespace.essence",
+					"match": "\\b(namespace)\\b"
+				},
+				{
 					"name": "storage.type.essence",
 					"match": "\\b(constant|variable)\\b"
 				},
