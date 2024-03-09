@@ -3,6 +3,9 @@
 	"name": "Essence",
 	"patterns": [
 		{
+			"include": "#comments"
+		},
+		{
 			"include": "#keywords"
 		},
 		{
@@ -127,6 +130,14 @@
 				{
 					"name": "punctuation.definition.block.essence",
 					"match": "\\{|\\}"
+				}
+			]
+		},
+		"comments": {
+			"patterns": [
+				{
+					"match": "§.*$",
+					"name": "comment.line.essence"
 				}
 			]
 		}
